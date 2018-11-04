@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="footer.css">
+
+</head>
+<body>
+  <header class="One">
+    <div class="Menu">
+      <ul>
+        <li class="active">
+          <a href="Home.html">
+            <img src="iium.png" alt="" width="25" height="auto">
+            <strong>MyCanteen</strong>
+          </a>
+        </li>
+        <li>
+          <a href="Menu.html">
+            <img src="logo.png" alt="" width="25" height="auto">
+            <strong>Menu</strong>
+          </a>
+        </li>
+        <li>
+          <a href="offer.html">
+            <img src="logo2.png" alt="" width="25" height="auto">
+            <strong>Offer</strong>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <img src="logo1.png" alt="" width="25" height="auto">
+            <strong>Contact us</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="test.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="shawarma2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="image_shawarma copy.jpg" style="width:100%">
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+  }
+  </script>
+  <div class="pic">
+    <h1>How Does MyCanteen™ Work ?</h1> <br>
+    <a href="Login.html"><img src="Capture.png" alt=""></a>
+  </div>
+
+  <footer>
+    <div>
+      <p><h1><img src="men.png" width="42px" height="auto" alt="">Mahallah</h1></p><br>
+      <p><a href="Ali.html">Ali</a></p>
+      <p><a href="Bilal.html">Bilal</a></p>
+      <p><a href="Faruk.html">Faruk</a></p>
+      <p><a href="Ruqayyah.html">Ruqayyah</a></p>
+      <p><a href="Salahuddin.html">Salahuddin</a></p>
+      <p><a href="Siddiq.html">Siddiq</a></p>
+      <p><a href="Uthman.html">Uthman</a></p>
+      <p><a href="Zubair.html">Zubair</a></p>
+    </div>
+
+    <div>
+      <p><h1><img src="women.png" width="42px" height="auto" alt=""> Mahallah</h1></p><br>
+      <p><a href="Ameenah.html">Ameenah</a></p>
+      <p><a href="Asma.html">Asma</a></p>
+      <p><a href="Assiah.html">Assiah</a></p>
+      <p><a href="Hafsa.html">Hafsa</a></p>
+      <p><a href="Ruqayyah.html">Ruqayyah</a></p>
+      <p><a href="Sumaiyah.html">Sumaiyah</a></p>
+    </div>
+
+    <div>
+      <p><h1>Offers</h1></p><br>
+      No offer available yet
+    </div>
+
+    <div>
+      <p><h1>Support</h1></p><br>
+      <p><a href="#">Contact us</a></p>
+      <p><a href="#">Feedback</a></p>
+      <p><a href="#">Report</a></p>
+      <p><a href="#">Help</a></p>
+    </div>
+
+    <div class="media">
+      <p><h1>Follow us</h1></p>
+      <p><a href="#"><img src="facebook.png" alt=""></a></p>
+      <p><a href="#"><img src="instagram.png" alt=""></a></p>
+    </div>
+    </footer>
+  </body>
+</html>

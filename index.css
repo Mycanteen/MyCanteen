@@ -1,0 +1,131 @@
+/*Header  */
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image: url(back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.One{
+  height: 45px;
+  border-radius: 4px 4px 4px 4px;
+  background-color: #342b2b;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 180px;
+  margin-top: 1.7%;
+  padding :25px;
+  box-shadow: 4px 4px 4px 4px grey;
+}
+.Menu{
+  font-family: arial, cursive;
+  padding-left: auto;
+  padding-right: auto;
+  margin-top: 0;
+  display: inline-block;
+}
+.Menu li{
+  display: table-cell;
+  width: 250px;
+  font-size: 24px;
+  transition: text-shadow, color 1s;
+}
+.Menu li:hover{
+  transition: text-shadow, color 1s;
+  width: 250px;
+}
+.Menu li.active a{
+  background-color: white;
+  padding: 5% 2%;
+  border-radius: 4px 4px 4px 4px
+}
+.Menu a{
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.left span{
+  float: right;
+}
+.left span{
+  float: left;
+}
+.Menu a:hover{
+  color: darkorange;
+  transition: 0.5s;
+  background: #342b2b;
+  border-bottom: 4px solid red;
+}
+
+/* Picture Slideshow */
+
+/* * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;} */
+
+/* Slideshow container */
+.slideshow-container {
+  padding-top: 3%;
+  max-width: 1120px;
+  padding-right: 2.5%;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*Picture*/
+.pic{
+  border-top: 1px solid darkgrey;
+  color: #342b2b;
+  width: 77.5%;
+  font-size: 18px;
+  font-family: Arial;
+  padding-top: 30px;
+  margin-left: 10%;
+}
+.pic img{
+  width: 1120px;
+  padding-right: 10%;
+  height: auto;
+}

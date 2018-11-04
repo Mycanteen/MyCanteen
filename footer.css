@@ -1,0 +1,58 @@
+footer{
+  margin-top: 5%;
+  text-align: center;
+  padding-top: 10px;
+  height: 280px;
+  width: 100%;
+  background-color: grey;
+  font-family: arial;
+}
+
+footer p{
+  margin-left: 35%;
+  text-align: left;
+  font-size: 16px;
+  font-family: arial;
+}
+footer a{
+  text-decoration: none;
+  color: black;
+}
+footer a:hover{
+  color: darkorange;
+  font-family: arial;
+  font-size: 24px;
+}
+footer div:nth-of-type(1){
+  width: 20%;
+  float: left;
+}
+
+
+footer div:nth-of-type(2){
+  width: 15%;
+  float: left;
+}
+
+footer div:nth-of-type(4){
+  float: left;
+  width: 15%;
+}
+
+footer div:nth-of-type(3){
+  float: left;
+  width: 25%;
+}
+
+footer p img{
+  margin-top: 15px;
+  margin-left: 15%;
+  width: 42px;
+  height: auto;
+}
+
+footer p img:hover{
+  width: 50px;
+  border-bottom: 2px solid grey;
+  height: auto;
+}
